@@ -1,0 +1,19 @@
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff; /* Цвет подчеркивания */
+  transition: width 0.3s ease; /* Анимация расширения */
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
