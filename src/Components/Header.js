@@ -12,7 +12,7 @@ export default class Header extends Component {
             <>
                 <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/" >
+                        <Navbar.Brand href="/firstclass" >
                             <img
                                 src={logo}
                                 height="60"
@@ -44,7 +44,7 @@ export default class Header extends Component {
                 <Router>
                     <Routes>
                         <Route path="/destinations" element={<Destinations/>}/>
-                        <Route path="/" element={<Home/>}/>
+                        <Route path="/firstclass/" element={<Home/>}/>
                     </Routes>
                 </Router>
             </>
