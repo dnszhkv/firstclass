@@ -43,7 +43,6 @@ export default class Header extends Component {
 
                 <Router>
                     <Routes>
-                        <Route path="/firstclass" element={<Destinations/>}/>
                         <Route path="/firstclass" element={<Home/>}/>
                     </Routes>
                 </Router>
