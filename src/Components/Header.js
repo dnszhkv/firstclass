@@ -12,7 +12,7 @@ export default class Header extends Component {
             <>
                 <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/firstclass" >
+                        <Navbar.Brand href="/" >
                             <img
                                 src={logo}
                                 height="60"
@@ -24,10 +24,10 @@ export default class Header extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="mx-auto">
-                                <Nav.Link href="/firstclass"> Направления </Nav.Link>
-                                <Nav.Link href="/firstclass"> Стили путешествий </Nav.Link>
-                                <Nav.Link href="/firstclass"> О нас </Nav.Link>
-                                <Nav.Link href="/firstclass"> Истории </Nav.Link>
+                                <Nav.Link href="/destinations"> Направления </Nav.Link>
+                                <Nav.Link href="/"> Стили путешествий </Nav.Link>
+                                <Nav.Link href="/"> О нас </Nav.Link>
+                                <Nav.Link href="/"> Истории </Nav.Link>
                             </Nav>
                             <Form className='d-flex'>
                                 <FormControl
@@ -43,7 +43,8 @@ export default class Header extends Component {
 
                 <Router>
                     <Routes>
-                        <Route path="/firstclass" element={<Home/>}/>
+                        <Route path="/destinations" element={<Destinations/>}/>
+                        <Route path="/" element={<Home/>}/>
                     </Routes>
                 </Router>
             </>
